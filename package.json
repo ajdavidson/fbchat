@@ -4,7 +4,6 @@
   "description": "",
   "main": "firebase-chat.html",
   "scripts": {
-    "start": "open firebase-chat.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
