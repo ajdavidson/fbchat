@@ -1,16 +1,17 @@
 (function () {
+  const ev = require('dotenv').config()
   // TODO: replace this with your own firebase config object after creating app in your firebase console
   // Your web app's Firebase configuration
 
   // note: this config will not work indefinitely, will need to replace with your own config to run solution file
   var firebaseConfig = {
-    apiKey: "AIzaSyAE-_KgBogx90ogqChH9c2_D1sI78ibycE",
+    apiKey: process.env.FB_KEY,
     authDomain: "courso-bfad0.firebaseapp.com",
     databaseURL: "https://courso-bfad0-default-rtdb.firebaseio.com",
     projectId: "courso-bfad0",
     storageBucket: "courso-bfad0.appspot.com",
-    messagingSenderId: "901605749368",
-    appId: "1:901605749368:web:3be361e14746ef1d7a338d"
+    messagingSenderId: process.env.FB_MID,
+    appId: process.env.FB_AID
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
