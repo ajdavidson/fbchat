@@ -4,7 +4,7 @@ var cors = require('cors');
 const e = require('express');
 
 // used to serve static files from public directory
-app.use(express.static('firebase-chat.html'));
+app.use(express.static('public'));
 app.use(cors());
 
 const port = process.env.PORT || 3000
